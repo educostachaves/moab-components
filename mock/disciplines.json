@@ -1,0 +1,167 @@
+{
+  "status": "success",
+  "payload": [
+    {
+      "id": 24,
+      "name": "Manual da Aprova\u00e7\u00e3o",
+      "slug": "manual-da-aprovacao",
+      "image": "Eduardo_Valladares_crop.jpg",
+      "teacher": "Eduardo Valladares",
+      "percentage": 0,
+      "highlight": true
+    },
+    {
+      "id": 1,
+      "name": "Estatuto e \u00c9tica",
+      "slug": "estatuto-e-etica",
+      "image": "Felipe_Asensi_crop.jpg",
+      "teacher": "Felipe Asensi",
+      "percentage": 0,
+      "highlight": false
+    },
+    {
+      "id": 2,
+      "name": "Direito Administrativo",
+      "slug": "direito-administrativo",
+      "image": "Julian_Barros_crop.jpg",
+      "teacher": "Julian Barros",
+      "percentage": 0,
+      "highlight": false
+    },
+    {
+      "id": 3,
+      "name": "Direito Constitucional",
+      "slug": "direito-constitucional",
+      "image": "Luis_Alberto__crop.jpg",
+      "teacher": "Luis Alberto ",
+      "percentage": 0,
+      "highlight": false
+    },
+    {
+      "id": 4,
+      "name": "Direito Civil",
+      "slug": "direito-civil",
+      "image": "Leonardo_da_Luz_crop.jpg",
+      "teacher": "Leonardo da Luz",
+      "percentage": 0,
+      "highlight": false
+    },
+    {
+      "id": 5,
+      "name": "Direito Processual Civil",
+      "slug": "direito-processual-civil",
+      "image": "Alexandre_Flexa_crop.jpg",
+      "teacher": "Alexandre Flexa",
+      "percentage": 0,
+      "highlight": false
+    },
+    {
+      "id": 6,
+      "name": "Direito Penal",
+      "slug": "direito-penal",
+      "image": "Flavia_Sanna_crop.jpg",
+      "teacher": "Fl\u00e1via Sanna",
+      "percentage": 0,
+      "highlight": false
+    },
+    {
+      "id": 7,
+      "name": "Direito Processual Penal",
+      "slug": "direito-processual-penal",
+      "image": "Leonardo_Galardo_crop.jpg",
+      "teacher": "Leonardo Galardo",
+      "percentage": 0,
+      "highlight": false
+    },
+    {
+      "id": 8,
+      "name": "Direito do Trabalho",
+      "slug": "direito-do-trabalho",
+      "image": "Leandro_Antunes_crop.jpg",
+      "teacher": "Leandro Antunes",
+      "percentage": 0,
+      "highlight": false
+    },
+    {
+      "id": 9,
+      "name": "Direito Processual do Trabalho",
+      "slug": "direito-processual-do-trabalho",
+      "image": "Leandro_Antunes_crop.jpg",
+      "teacher": "Leandro Antunes",
+      "percentage": 0,
+      "highlight": false
+    },
+    {
+      "id": 10,
+      "name": "Direito Empresarial",
+      "slug": "direito-empresarial",
+      "image": "Priscilla_Menezes_crop.jpg",
+      "teacher": "Priscilla Menezes",
+      "percentage": 0,
+      "highlight": false
+    },
+    {
+      "id": 11,
+      "name": "Direito Tribut\u00e1rio",
+      "slug": "direito-tributario",
+      "image": "Rene_Longo_crop.jpg",
+      "teacher": "Rene Longo",
+      "percentage": 0,
+      "highlight": false
+    },
+    {
+      "id": 12,
+      "name": "Direito do Consumidor",
+      "slug": "direito-do-consumidor",
+      "image": "Samuel_Cortes_crop.jpg",
+      "teacher": "Samuel Cort\u00eas",
+      "percentage": 0,
+      "highlight": false
+    },
+    {
+      "id": 13,
+      "name": "Estatuto da Crian\u00e7a e do Adolescente",
+      "slug": "estatuto-da-crianca-e-do-adolescente",
+      "image": "Tadeu_Valverde_crop.jpg",
+      "teacher": "Tadeu Valverde",
+      "percentage": 0,
+      "highlight": false
+    },
+    {
+      "id": 14,
+      "name": "Direito Ambiental",
+      "slug": "direito-ambiental",
+      "image": "Luiz_Jungstedt_crop.jpg",
+      "teacher": "Luiz Jungstedt",
+      "percentage": 0,
+      "highlight": false
+    },
+    {
+      "id": 15,
+      "name": "Direito Internacional",
+      "slug": "direito-internacional",
+      "image": "Raphael_Rocha_crop.jpg",
+      "teacher": "Raphael Rocha",
+      "percentage": 0,
+      "highlight": false
+    },
+    {
+      "id": 16,
+      "name": "Filosofia",
+      "slug": "filosofia",
+      "image": "Felipe_Asensi_crop.jpg",
+      "teacher": "Felipe Asensi",
+      "percentage": 0,
+      "highlight": false
+    },
+    {
+      "id": 17,
+      "name": "Direitos Humanos",
+      "slug": "direitos-humanos",
+      "image": "Luis_Alberto__crop.jpg",
+      "teacher": "Luis Alberto ",
+      "percentage": 0,
+      "highlight": false
+    }
+  ]
+}

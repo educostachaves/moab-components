@@ -1,0 +1,21 @@
+{
+  "status": "success",
+  "payload": [
+    {
+      "title": "Plano de Estudo - 30 dias",
+      "url": "https:\/\/masteroab-attachments.s3.amazonaws.com\/materiais\/30_dias.pdf"
+    },
+    {
+      "title": "Plano de Estudo - 45 dias",
+      "url": "https:\/\/masteroab-attachments.s3.amazonaws.com\/materiais\/45_dias.pdf"
+    },
+    {
+      "title": "Plano de Estudo - 60 dias",
+      "url": "https:\/\/masteroab-attachments.s3.amazonaws.com\/materiais\/60_dias.pdf"
+    },
+    {
+      "title": "Plano de Estudo - 90 dias",
+      "url": "https:\/\/masteroab-attachments.s3.amazonaws.com\/materiais\/90_dias.pdf"
+    }
+  ]
+}
