@@ -1,0 +1,324 @@
+@-webkit-keyframes c {
+  0% { background-position: 0 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+@keyframes c {
+  0% { background-position: 0 50%;}
+  100% { background-position: 100% 50%; }
+}
+
+@-webkit-keyframes d {
+  0% { background-position: 100% 50%; }
+  100% { background-position: 0 50%; }
+}
+
+@keyframes d {
+  0% {  background-position: 100% 50%; }
+  100% { background-position: 0 50%; }
+}
+
+
+.btn {
+  font-family: 'lato-bold',serif;
+  text-transform: uppercase;
+
+  &.btn-cta-promotional {
+    margin: 15px;
+    padding: 18px calc-responsive(20, 320, 60, 1024) 15px;
+    color: $colorWhite;
+    border: none;
+    background: linear-gradient(270deg, $colorSecondary, $colorPrimary, $colorSecondary);
+    background-size: 200% 200%;
+
+    &:hover {
+      -webkit-animation: c 1s ease;
+      animation: c 1s ease;
+      color: $colorWhite;
+      background-position: 100% 50%;
+    }
+    
+    &:not(:hover) {
+      -webkit-animation: d 1s ease;
+      animation: d 1s ease;
+    }
+  }
+
+  &.btn-cta-colorful {
+    padding: 18px;
+    color: $colorWhite;
+    border: none;
+    background: linear-gradient(270deg, $colorSecondary, $colorPrimary, $colorSecondary);
+    background-size: 200% 200%;
+
+    &:hover {
+      -webkit-animation: c 1s ease;
+      animation: c 1s ease;
+      color: $colorWhite;
+      background-position: 100% 50%;
+    }
+    
+    &:not(:hover) {
+      -webkit-animation: d 1s ease;
+      animation: d 1s ease;
+    }
+  }
+
+  &.btn-cta-hellobar {
+    padding: 10px;
+    margin: 8px 0;
+    color: $colorWhite;
+    border: none;
+    background: linear-gradient(270deg, $colorSecondary, $colorPrimary, $colorSecondary);
+    background-size: 200% 200%;
+
+    &:hover {
+      -webkit-animation: c 1s ease;
+      animation: c 1s ease;
+      color: $colorWhite;
+      background-position: 100% 50%;
+    }
+    
+    &:not(:hover) {
+      -webkit-animation: d 1s ease;
+      animation: d 1s ease;
+    }
+  }
+
+  &.btn-cta-blue {
+    margin: 15px;
+    padding: 18px calc-responsive(20, 320, 60, 1024) 15px;
+    color: $colorWhite;
+    border: none;
+    background-color: $colorBlueDark;
+    transition: background-color .5s ease;
+
+    &:hover {
+      background-color: lighten($colorBlueDark, 50%);
+    }
+  }
+
+  &.btn-cta-transparent {
+    margin: 15px;
+    padding: 18px;
+    border: none;
+    text-decoration: none;
+
+    &.green {
+      color: $colorGreenLight;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &.btn-signup {
+    padding: 13px 30px;
+    color: $colorWhite;
+    border: none;
+    background: linear-gradient(270deg, $colorSecondary, $colorPrimary, $colorSecondary);
+    background-size: 200% 200%;
+
+    &:hover {
+      -webkit-animation: c 1s ease;
+      animation: c 1s ease;
+      color: $colorWhite;
+      background-position: 100% 50%;
+    }
+    
+    &:not(:hover) {
+      -webkit-animation: d 1s ease;
+      animation: d 1s ease;
+    }
+  }
+
+  &.btn-clear {
+    padding: 13px 30px;
+    color: $colorWhite;
+    border: none;
+    background-color: $colorBlueDark;
+    transition: background-color .5s ease;
+
+    &:hover {
+      color: $colorWhite;
+      background-color: $colorBlueCyano;
+    }
+  }
+
+  &.btn-livestream {
+    margin-top: 10px;
+    padding: 13px 30px;
+    color: $colorWhite;
+    border: 1px solid $colorWhite;
+    background-color: transparent;
+    transition: background-color .5s ease;
+
+    &:hover {
+      color: $colorWhite;
+      background-color: $colorBlueCyano;
+    }
+  }
+
+  &.btn-back {
+    margin-top: 10px;
+    padding: 13px 30px;
+    color: $colorBlueDark;
+    border: 1px solid $colorBlueDark;
+    background-color: transparent;
+    transition: background-color .5s ease;
+
+    &:hover {
+      color: $colorWhite;
+      background-color: $colorBlueCyano;
+    }
+  }
+
+  &.btn-cta-livestream {
+    margin-top: 10px;
+    padding: 13px 30px;
+    color: $colorWhite;
+    border: 1px solid transparent;
+    background: linear-gradient(270deg, $colorSecondary, $colorPrimary, $colorSecondary);
+    background-size: 200% 200%;
+
+    &:hover {
+      -webkit-animation: c 1s ease;
+      animation: c 1s ease;
+      color: $colorWhite;
+      background-position: 100% 50%;
+    }
+    
+    &:not(:hover) {
+      -webkit-animation: d 1s ease;
+      animation: d 1s ease;
+    }
+  }
+
+  &.btn-social {
+    padding: 5px;
+    color: $colorWhite;
+    transition: color 0.5s ease;
+    &:hover {
+      color: $colorSecondary;
+    }
+  }
+
+  &.btn-assista {
+    padding: 10px;
+    background-color: transparent;
+    color: $colorWhite;
+    border: 1px solid $colorWhite;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      color: $colorWhite;
+      background-color: $colorSecondary;
+    }
+  }
+
+  &.btn-modules {
+    padding: 13px;
+    background-color: transparent;
+    color: $colorBlueDark;
+    font-size: 14px;
+    transition: background-color 0.5s ease;
+    border-radius: 0px;
+
+    &:hover {
+      color: $colorBlueDark;
+      background-color: $colorPrimary;
+    }
+
+  }
+
+  &.btn-float-box {
+    padding: 10px;
+    background-color: transparent;
+    color: $colorWhite;
+    border: 1px solid $colorWhite;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      color: $colorWhite;
+      background-color: $colorBlueDark;
+    }
+  }
+
+  &.btn-signin,
+  &.btn-signup,
+  &.btn-send,
+  &.btn-submit {
+    padding: 10px;
+    color: $colorWhite;
+    font-size: 16px;
+    margin: 1em 0;
+    background: linear-gradient(270deg, $colorSecondary, $colorPrimary, $colorSecondary);
+    background-size: 200% 200%;
+
+    &:hover {
+      -webkit-animation: c 1s ease;
+      animation: c 1s ease;
+      color: $colorWhite;
+      background-position: 100% 50%;
+    }
+    
+    &:not(:hover) {
+      -webkit-animation: d 1s ease;
+      animation: d 1s ease;
+    }
+  }
+
+  &.btn-social-signin {
+    padding: 10px;
+    color: $colorWhite;
+    font-size: 16px;
+    margin: 1em 0;
+    border: none;
+    background-color: $colorBlueDark;
+    transition: background-color .5s ease;
+
+    &:hover {
+      background-color: lighten($colorBlueDark, 50%);
+    }
+  }
+
+  &.btn-arrow,
+  &.btn-close,
+  &.btn-open {
+    padding: 1em;
+    background-color: transparent;
+    color: $colorWhite;
+    transition: color 0.5s ease;
+    &:hover {
+      color: $colorBlueDark;
+    }
+  }
+
+  &.btn-pd-large {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+  &.btn-pd-medium {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  &.btn-download {
+    padding: 5px 10px;
+    color: $colorWhite;
+    border: none;
+    background-color: $colorPrimary;
+    transition: background-color .5s ease;
+
+    &:hover {
+      color: $colorWhite;
+      background-color: darken($colorPrimary,30%);
+    }
+  }
+
+}

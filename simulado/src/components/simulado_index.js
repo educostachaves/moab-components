@@ -22,6 +22,7 @@ class SimuladoIndex extends Component {
   render() {
     return (
       <div>
+        <Navbar type="" brand="" user="" questions=""/>
         <header className="header-calendar">
           <div className="container">
             <div className="row">

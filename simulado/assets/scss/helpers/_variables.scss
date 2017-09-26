@@ -1,0 +1,49 @@
+// PATH
+$path: '/assets/';
+$imagePath: $path + 'images/';
+$fontPath: $path + 'fonts/';
+
+// COLORS
+$colorWhite: #ffffff !default;
+$colorBlack: #000000 !default;
+
+$colorPrimary: #ef4367 !default;
+$colorSecondary: #f7941e !default;
+$colorGreenLight: #3addb1 !default;
+$colorGreenDarken: #2fbc94 !default;
+$colorGrapeLight: #e100ff !default;
+$colorYellow: #E8E759 !default;
+$colorYellowDark: #CCCB1E !default;
+$colorBlue: #4444E4 !default;
+$colorBlueCyano: #00ffdd !default;
+$colorBlueLighter: #F2F8FF !default;
+$colorBlueLight: #DEEFFE !default;
+$colorBlueDark: #103551 !default;
+$colorBluelighter: #18517c !default;
+$colorBlueMid: #195887 !default;
+$colorBlueDarkest: #323c47 !default;
+$colorBlueExtremelyDark: #080840 !default;
+
+$colorBlackNear: #111111 !default;
+$colorBlackDarker: #242424 !default;
+$colorGrayDark: #333 !default;
+$colorGrayMid: #4e4f51 !default;
+$colorGray: #85878b !default;
+$colorGrayMoon: #ccc !default;
+$colorGrayLight: #e7eaed !default;
+$colorSilverDark: #797c81 !default;
+$colorSilver: #9d9fa3 !default;
+$colorSilverLight: #aaa !default;
+$colorWhiteNear: #f4f4f4 !default;
+
+$colorShadowLight: rgba(0, 0, 0, 0.20);
+$colorShadowMedium: rgba(0, 0, 0, 0.40);
+$colorShadowHeavy: rgba(0, 0, 0, 0.60);
+
+// FONTS
+$latoFontPath: $fontPath + 'lato/';
+$ioniconsFontPath: $fontPath + 'ionicons/';
+$gliphiconsFontPath: $fontPath + 'gliphicons/';
+$fontAwesomeFontPath: $fontPath + 'font-awesome/';
+$leagueSpartanFontPath: $fontPath + 'league-spartan/';
+$materialIconsFontPath: $fontPath + 'material-icons/';

@@ -1,0 +1,17 @@
+.session-message {
+  position: absolute;
+  width: 100%;
+  padding: 5em 0;
+  z-index: 10;
+}
+
+.alert {
+  box-shadow: 0 0 10px $colorShadowLight;
+  padding: 20px;
+  
+  &.alert-dismissable .close {
+    top: -4px;
+    right: -10px;
+  }
+}
+

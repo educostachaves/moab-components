@@ -1,0 +1,32 @@
+* {
+	outline:none !important;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important;
+}
+
+html, body {
+	height:100%;
+}
+
+body {
+	font-family: 'lato-regular', sans-serif ;
+	font-size: 14px;
+}
+
+p {
+	font-size: 14px;
+	strong {
+		font-family: 'lato-bold', sans-serif ;
+	}
+}
+
+textarea {
+	resize:none;
+}
+
+.row.flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}

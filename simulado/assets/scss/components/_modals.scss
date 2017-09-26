@@ -1,0 +1,29 @@
+
+.modal {
+  margin-top: 4em;
+  .modal-backdrop {
+    z-index: 0;
+  }
+  .modal-content .modal-body {
+    .modal-title{
+      font-family: 'lato-bold', serif;
+      font-size: 22px;
+      text-align: center;
+      padding-bottom: 1em;
+    }
+    p {
+      font-size: 15px;
+      text-align: center;
+      padding: 5px 0;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .modal-xlg {
+    width: 1210px;
+  }
+}
+
+
+ 

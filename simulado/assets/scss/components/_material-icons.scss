@@ -1,0 +1,78 @@
+.gradient-icon {
+  background-image: linear-gradient(to left, $colorSecondary, $colorPrimary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.material-icons {
+  font-family: 'material-icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 35px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  text-align: center;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+
+  &.header,
+  &.diferentials {
+    @extend .gradient-icon;
+    padding-bottom: 15px;
+  }
+  &.blue {
+    padding-bottom: 15px;
+    color: $colorBlueDark;
+  }
+  &.green {
+    color: $colorGreenLight;
+  }
+  &.red {
+    color: $colorPrimary;
+  }
+  &.orange {
+    color: $colorSecondary;
+  }
+  &.white {
+    color: $colorWhite;
+  }
+  &.form-green {
+    font-size: 25px;
+    color: $colorGreenLight;
+  }
+  &.icon-settings {
+    font-size: 30px;
+  }
+  &.gradient {
+    @extend .gradient-icon;
+  }
+  &.big,
+  &.large {
+    font-size: 200px;
+  }
+  &.medium {
+    font-size: 100px;
+  }
+  &.small {
+    font-size: 50px;
+  }
+  &.tiny {
+    font-size: 20px;
+  }
+  
+}

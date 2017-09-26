@@ -1,0 +1,913 @@
+
+header.header-home {
+  hr {
+    height: 1px;
+    opacity: .3;
+    border: none;
+    background-color: $colorWhite;
+  }
+
+  .details{
+    overflow: hidden;
+    position: relative;
+    .box-details {
+      text-align: center;
+      .details-item {
+        padding: 15px 70px;
+        color: $colorWhite;
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+    .box-details-controllers {
+      z-index: 1000;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      .btn.btn-arrow {
+        height: 100px;
+        position: absolute;
+        &.left {
+          left: 0;
+        }
+        &.right {
+          right: 0;
+        }
+      }
+    }
+  }
+
+  &.sos-oab {
+    background-color: $colorGreenLight;
+    .box-header {
+      .title {
+        font-family: 'league-spartan-bold', serif;
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 1;
+        padding: 15px 15px 5px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $colorWhite;
+      }
+      .subtitle {
+        padding: .5em 2em;
+        font-family: 'lato-regular', serif;
+        font-size: 24px;
+        line-height: 1.2;
+        text-align: center;
+        color: $colorGrayDark;
+      }
+      p {
+        font-family: 'lato-bold', serif;
+        font-size: 18px;
+        text-align: center;
+        padding: 1em;
+        color: $colorWhite;
+      }
+    }
+    .dt-header-image {
+      display: none;
+      position: relative;
+      height: 100%;
+      img {
+        position: absolute;
+        bottom: 0;
+        height: auto;
+        width: auto; 
+        max-width: 480px; 
+      }
+    }
+  }  
+
+  &.quatro-semanas {
+    background-color: $colorGray;
+    background-image: url($imagePath + 'headers/bg-quatrosemanas.jpg');
+    background-position: 50%;
+    background-size: cover;
+    .box-header {
+      width: 100%;
+      padding: 30px 0;
+      .brand {
+        display: block;
+        width: 140px;
+        height: 59px;
+        margin: auto;
+        background-image: url($imagePath + 'headers/logo-quatrosemanas.png');
+        background-position: 50%;
+        background-size: cover;
+      }
+      .title {
+        font-family: 'league-spartan-bold', serif;
+        font-size: calc-responsive(45, 320, 80, 1170);
+        font-weight: 700;
+        line-height: 1;
+        padding: 15px 0 5px;
+        text-align: center;
+        text-transform: uppercase;
+        background-image: linear-gradient(270deg, $colorSecondary, $colorPrimary);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .subtitle {
+        font-family: 'lato-light', serif;
+        font-size: 32px;
+        text-align: center;
+        color: $colorWhite;
+      }
+    }
+    .box-details p.description{
+      font-family: 'lato-bold', serif;
+      font-size: 20px;
+      padding: 15px 0;
+      line-height: 1.5;
+      text-align: center;
+      color: $colorWhite;
+    }
+    .box-price p {
+      font-size: 14px;
+      padding: 15px 0;
+      text-align: center;
+      color: $colorWhite;
+      strong {
+        font-family: 'lato-regular', serif;
+        &.normal-price {
+          text-decoration: line-through;
+        }
+        &.promotional-price {
+          font-size: 28px;
+          color: $colorSecondary;
+        }
+      }
+    }
+    .dt-header-image {
+      display: none;
+      position: relative;
+      height: 100%;
+      img {
+        position: absolute;
+        bottom: 0;
+        height: auto;
+        width: auto; 
+        max-width: 480px; 
+      }
+    }
+  }
+
+  &.segunda-fase{
+    background: linear-gradient(90deg, $colorBlueDark, $colorBlueMid);
+    .box-header {
+      width: 100%;
+      padding: 5em 0 2em;
+      .brand {
+        display: block;
+        width: 140px;
+        height: 59px;
+        margin: auto;
+        background-image: url($imagePath + 'headers/logo-quatrosemanas.png');
+        background-position: 50%;
+        background-size: cover;
+      }
+      .title {
+        font-family: 'league-spartan-bold', serif;
+        font-size: calc-responsive(40, 320, 80, 1170);
+        font-weight: 700;
+        line-height: 1.2;
+        padding: 15px 0 15px;
+        text-align: left;
+        text-transform: uppercase;
+        background-image: linear-gradient(270deg, $colorSecondary, $colorPrimary);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .subtitle {
+        font-family: 'lato-light', serif;
+        font-size: 28px;
+        text-align: left;
+        color: $colorWhite;
+        a {
+          color: $colorSecondary;
+        }
+      }
+    }
+    .box-details {
+      overflow: hidden;
+      .details-item {
+        width: 300px;
+        display: block;
+        margin: 1.5em auto;
+        .icon {
+          width: 60px;
+          float: left;
+        }
+        p {
+          width: 240px;
+          float:right;
+          font-family: 'lato-bold', serif;
+          font-size: 20px;
+          color: $colorWhite;
+        }
+      }
+    }
+    .box-price { 
+      padding: 2em 0 5em;
+      text-align: left;
+      p {
+        font-size: 24px;
+        color: $colorWhite;
+        padding: .4em 0;
+        font-family: 'lato-light', serif;
+        strong {
+          &.normal-price {
+            font-family: 'lato-regular', serif;
+            font-size: 26px;
+            text-decoration: line-through;
+          }
+          &.promotional-price {
+            font-family: 'lato-bold', serif;
+            font-size: 44px;
+            color: $colorSecondary;
+          }
+        }
+      }
+      .btn {
+        margin: 1em 0;
+      }
+    }
+    .dt-header-image {
+      display: none;
+      position: relative;
+      height: 100%;
+      img {
+        position: absolute;
+        bottom: 0;
+        height: auto;
+        width: 570px; 
+      }
+    }
+  }
+
+  &.arrancada {
+    background: linear-gradient(180deg, $colorSecondary, $colorPrimary);
+    padding: 0 0 1em;
+    .box-header {
+      width: 100%;
+      padding: 30px 0 0;
+      .title {
+        position: relative;
+        font-family: 'league-spartan-bold', serif;
+        font-size: 42px;
+        line-height: 1;
+        padding: 15px 0 5px;
+        text-align: left;
+        text-transform: uppercase;
+        color: $colorWhite;
+        &.arrancada{
+          &::after {
+            content: "";
+            position: absolute;
+            background-image: url( $imagePath + 'headers/dt-carimbo-arrancada.png');
+            background-size: cover;
+            display: block;
+            width: 80px;
+            height: 74px;
+            left: 210px;
+            bottom: 42px;
+          }
+        }
+      }
+      .subtitle {
+        font-family: 'lato-regular', serif;
+        font-size: 16px;
+        text-align: center;
+        color: $colorBlueDark;
+        .logoOab {
+          background-image: url( $imagePath + 'headers/dt-logo-oab.png');
+          display: inline-block;
+          width: 47px;
+          height: 18px;
+          background-size: cover;
+          margin-left: 5px;
+        }
+      }
+    }
+    .box-price p {
+      font-size: 22px;
+      text-align: center;
+      color: $colorBlueDark;
+      strong {
+        font-family: 'lato-regular', serif;
+        &.normal-price {
+          text-decoration: line-through;
+        }
+        &.promotional-price {
+          display: block;
+          font-size: 34px;
+          color: $colorWhite;
+          .price-large {
+            font-family: 'lato-bold', serif;
+            font-size: 50px;
+          }
+        }
+      }
+    }
+    .dt-header-image {
+      display: none;
+      position: relative;
+      height: 100%;
+      img {
+        position: absolute;
+        height: auto;
+        left: -160px;
+      }
+    }
+  }
+
+  &.tudo-sobre-oab {
+    background: linear-gradient(90deg, $colorSecondary, $colorPrimary);
+    padding: 0 0 1em;
+    .box-header {
+      width: 100%;
+      padding: 30px 0 0;
+      .title {
+        position: relative;
+        font-family: 'league-spartan-bold', serif;
+        font-size: 42px;
+        line-height: 1.2;
+        padding: 15px 0 5px;
+        text-align: left;
+        text-transform: uppercase;
+        color: $colorWhite;
+      }
+      .subtitle {
+        padding-bottom: 1em;
+        font-family: 'lato-regular', serif;
+        font-size: 18px;
+        color: $colorWhite;
+        strong {
+          color: $colorBlueDark;
+          text-transform: uppercase;
+        }
+      }
+      p {
+        font-family: 'lato-regular', serif;
+        font-size: 16px;
+        color: $colorWhite;
+      }
+    }
+    .dt-header-image {
+      display: none;
+      position: relative;
+      height: 100%;
+      img {
+        position: absolute;
+        height: auto;
+      }
+    }
+  }
+
+  &.bancada {
+    background: linear-gradient(273deg, $colorGreenLight, $colorGreenDarken);
+    padding: 0 0 1em;
+    .box-header {
+      width: 100%;
+      padding: 30px 0 0;
+      .title {
+        position: relative;
+        font-family: 'league-spartan-bold', serif;
+        font-size: 42px;
+        line-height: 1.2;
+        padding: 15px 0 5px;
+        text-align: left;
+        text-transform: uppercase;
+        color: $colorWhite;
+        &.carimbo{
+          &::after {
+            content: "";
+            position: absolute;
+            background-image: url( $imagePath + 'headers/dt-carimbo-arrancada.png');
+            background-size: cover;
+            display: block;
+            width: 80px;
+            height: 74px;
+            left: 210px;
+            bottom: 42px;
+          }
+        }
+      }
+      .subtitle {
+        font-family: 'lato-light', serif;
+        font-size: 22px;
+        text-align: left;
+        color: $colorWhite;
+      }
+    }
+    .box-price p {
+      font-size: 22px;
+      text-align: center;
+      color: $colorBlueDark;
+      strong {
+        font-family: 'lato-regular', serif;
+        &.normal-price {
+          text-decoration: line-through;
+        }
+        &.promotional-price {
+          display: block;
+          font-size: 34px;
+          color: $colorWhite;
+          .price-large {
+            font-family: 'lato-bold', serif;
+            font-size: 50px;
+          }
+        }
+      }
+    }
+    .dt-header-image {
+      display: none;
+      position: relative;
+      height: 100%;
+      img {
+        position: absolute;
+        height: auto;
+        left: 0px;
+      }
+    }
+  }
+
+  &.sprint-final{
+    position: relative;
+    background-image: url($imagePath + 'headers/dt-header-sprintfinal.jpg');
+    background-size: cover;
+    background-color: $colorBlackDarker;
+    padding: 0 0 1em;
+  
+    .box-header {
+      width: 100%;
+      padding: 3em 0 3em;
+      .title {
+        position: relative;
+        font-family: 'league-spartan-bold', serif;
+        font-size: 42px;
+        line-height: 1.2;
+        padding: 15px 0 5px;
+        text-align: left;
+        text-transform: uppercase;
+        color: $colorWhite;
+      }
+      .subtitle {
+        padding-bottom: 1em;
+        font-family: 'lato-regular', serif;
+        font-size: 18px;
+        color: $colorWhite;
+        strong {
+          color: $colorSecondary;
+        }
+      }
+      p {
+        font-family: 'lato-regular', serif;
+        font-size: 16px;
+        color: $colorWhite;
+        a {
+          text-decoration: underline;
+          color: $colorWhite;
+          &:hover {
+            color: $colorSecondary;
+          }
+        }
+        strong {
+          color: $colorSecondary;
+        }
+      }
+    }
+  }
+}
+
+header.header-calendar {
+  background-image: url($imagePath + 'headers/dt-header-calendario.png'), linear-gradient(90deg, $colorSecondary, $colorPrimary);
+  background-size: cover;
+  background-position: center center;
+  min-height: 50px;  
+
+  .calendar-description{
+    margin: 3em 0;
+    padding: 5em 0 2em;
+    h1 {
+      text-align: left;
+      font-size: 40px;
+      color: $colorWhite;
+      font-family: 'lato-bold', serif;
+    }
+    p {
+      padding: 1em 0;
+      color: $colorWhite;
+      font-size: 18px;
+    }
+  }
+}
+
+header.header-checkout{
+  background-image: linear-gradient(90deg, $colorSecondary, $colorPrimary);
+  min-height: 50px;  
+
+  .checkout-description{
+    margin: 3em 0;
+    padding: 5em 0 2em;
+    text-align: center;
+    h1 {
+      font-size: 35px;
+      color: $colorWhite;
+      font-family: 'lato-bold', serif;
+    }
+    h2 {
+      font-size: 25px;
+      color: $colorBlackDarker;
+      font-family: 'lato-bold', serif;
+    }
+    h3 {
+      font-size: 22px;
+      color: $colorWhite;
+      font-family: 'lato-bold', serif;
+    }
+    p {
+      padding: 1em 0;
+      color: $colorWhite;
+      font-family: 'lato-bold', serif;
+      font-size: 22px;
+      &.black {
+        font-size: 18px;
+        color: $colorBlackDarker;
+        font-family: 'lato-regular', serif;
+      }
+    }
+    .box-total {
+      border: 1px solid $colorWhite;
+      border-radius: 5px;
+      padding: 1em;
+      margin: .5em 0;
+      min-height: 55px;
+    }
+  }
+}
+
+header.header-intern{
+  min-height: 50px;
+  padding-top: 4em;
+  .content-description {
+    margin: 3em 0;
+    padding: 5em 0 2em;
+
+    h1,h2 {
+      padding: 5px 0;
+      text-align: left;
+      font-family: 'lato-bold', serif;
+    }
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 32px;
+    }
+    p {
+      padding-top: 5px;
+      line-height: 1.2;
+      text-align: justify;
+      font-size: 16px;
+      strong {
+        padding-top: 5px;
+        font-family: 'lato-bold', serif;
+        color: $colorBlueDark;
+      }
+    }
+  }
+
+  .content-studos {
+    @extend .col-md-6;
+    @extend .col-md-offset-3;
+    padding-top: 1em;
+    h2 {
+      padding: 15px 0 5px;
+      text-align: left;
+      font-family: 'lato-bold', serif;
+      font-size: 40px;
+    }
+    p {
+      padding: 10px 0;
+      line-height: 1.2;
+      font-size: 16px;
+    }
+    a {
+      padding: 10px 0;
+    }
+  }
+  &.bg-green {
+    background-image: linear-gradient( 0deg, $colorGreenLight, $colorGreenDarken);
+    color: $colorWhite;
+  }
+  &.bg-gray {
+    background-image: linear-gradient( 0deg, $colorGrayLight, $colorSilverLight);
+    color: $colorBlackNear;
+  }
+  &.bg-black {
+    background-image: linear-gradient( 0deg, $colorBlackDarker, $colorBlackNear );
+    color: $colorWhite;
+  }
+  &.bg-colorful {
+    background-image: linear-gradient( 90deg, $colorPrimary, $colorSecondary );
+    color: $colorWhite;
+  }
+
+  &.thin {
+    padding: 0 !important;
+    .content-description {
+      @extend .row;
+      margin: 1em 0 !important;
+      padding: 0 !important;
+      h2 {
+        padding: 5px 0;
+        text-align: left;
+        font-family: 'lato-bold', serif;
+        font-size: 20px;
+        strong {
+          padding-top: 5px;
+          font-family: 'lato-bold', serif;
+          color: $colorBlueDark;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width : 768px) {
+  .header-home {
+    &.segunda-fase{
+      .box-header .subtitle {
+        font-size: 40px !important;
+      }
+      .box-price {
+        padding-bottom: 6em;
+        p {
+          font-size: 22px;
+          strong.promotional-price {
+            font-size: 50px;
+            color: $colorSecondary;
+          }
+        }
+      }
+      .dt-header-image {
+        display: block !important;
+      }
+    }
+
+    &.quatro-semanas {
+      .box-header .subtitle {
+        font-size: 54px !important;
+      }
+      .box-price {
+        padding-bottom: 6em;
+        p {
+          font-size: 22px;
+          strong.promotional-price {
+            font-size: 50px;
+            color: $colorSecondary;
+          }
+        }
+      }
+      .dt-header-image {
+        display: block !important;
+      }
+    }
+
+    &.bancada {
+      padding: 0 0 3em !important;
+      .box-header {
+        padding-top: 1em;
+        .title {
+          font-size: 78px !important;
+          &.carimbo{
+            &::after {
+              width: 156px !important;
+              height: 145px !important;
+              bottom: 55px !important;
+              left: 300px !important;
+            }
+          }
+        }
+        .subtitle {
+          font-size: 40px !important;
+        }
+      }
+      .box-price p {
+        font-size: 22px;
+        strong.promotional-price {
+          display: inline !important;
+        }
+      }
+      .dt-header-image {
+        display: block !important;
+        img {
+          top: -325px;
+          width: 885px;
+        }
+      }
+      .details {
+        .box-details {
+          text-align: left;
+          .details-item {
+            padding: 0px 35px !important;
+            color: $colorWhite;
+            p {
+              float: left;
+              font-size: 18px;
+              padding: 5px 10px 0;
+              .material-icons {
+                font-size: 45px;
+                padding-bottom: 0;
+              }
+              &.description {
+                margin: 8px 0;
+                width: 210px;
+                display: inline-block;
+              }
+            }
+          }
+        }
+        .box-details-controllers {
+          display: none;
+        }
+      }
+    }
+    
+    &.arrancada {
+      padding: 0 0 7em !important;
+      .box-header {
+        .title {
+          text-align: left !important;
+          font-size: 70px !important;
+          &.arrancada{
+            &::after {
+              width: 156px !important;
+              height: 145px !important;
+              bottom: 55px !important;
+              left: 300px !important;
+            }
+          }
+        }
+        .subtitle {
+          text-align: left;
+          font-size: 20px;
+          .logoOab {
+            width: 65px;
+            height: 25px;
+          }
+        }
+      }
+      .box-price p {
+        font-size: 22px;
+        strong.promotional-price {
+          display: inline !important;
+        }
+      }
+      .dt-header-image {
+        display: block !important;
+        img {
+          bottom: -10px;
+          width: 650px;
+        }
+      }
+    }
+
+    &.tudo-sobre-oab {
+      padding: 0 0 120px !important;
+      .box-header {
+        .title {
+          text-align: left !important;
+          font-size: 54px !important;
+        }
+        .subtitle {
+          text-align: left;
+          font-size: 26px !important;
+        }
+        p {
+          font-size: 22px!important;
+          padding-top: 14px;
+        }
+      }
+      .dt-header-image {
+        display: block !important;
+        img {
+          width: 620px;
+          bottom: -120px;
+          left: -60px;
+        }
+      }
+    }
+
+    &.sprint-final {
+      padding: 0 0 120px !important;
+      .box-header {
+        .title {
+          text-align: left !important;
+          font-size: 95px !important;
+        }
+        .subtitle {
+          text-align: left;
+          font-size: 45px !important;
+        }
+        p {
+          font-size: 21px!important;
+          padding-top: 14px;
+        }
+      }
+      .dt-header-image {
+        display: block !important;
+        img {
+          width: 620px;
+          bottom: -120px;
+          left: -60px;
+        }
+      }
+    }
+
+    &.sos-oab {
+      .box-header {
+        .title {
+          font-size: 88px !important;
+          padding: 15px 0 5px !important;
+        }
+        .subtitle {
+          padding: .5em 4em !important;
+          font-size: 30px !important;
+        }
+        p {
+          font-size: 18px !important;
+        }
+      }
+    }  
+  }
+
+  .details {
+    .box-details {
+      text-align: center;
+      .details-item {
+        padding: 0px 5px !important;
+        color: $colorWhite;
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+    .box-details-controllers {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1170px) {
+  .header-home{
+    &.quatro-semanas {
+      .box-header .title {
+        font-size: 80px !important;
+      }
+    }
+    &.segunda-fase {
+      .box-header .title {
+        font-size: 60px !important;
+        letter-spacing: -3px;
+      }
+    }
+    &.arrancada {
+      .box-header {
+        .title {
+          text-align: left !important;
+          font-size: 85px !important;
+          &.arrancada{
+            &::after {
+              width: 156px !important;
+              height: 145px !important;
+              bottom: 70px !important;
+              left: 360px !important;
+            }
+          }
+        }
+        .subtitle {
+          text-align: left !important;
+          font-size: 25px !important;
+          .logoOab {
+            width: 65px !important;
+            height: 25px !important;
+          }
+        }
+      }
+      .dt-header-image {
+        display: block !important;
+        img {
+          bottom: -45px !important;
+          width: 800px !important;
+        }
+      }
+    }
+  }
+}

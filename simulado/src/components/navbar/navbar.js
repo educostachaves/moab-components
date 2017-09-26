@@ -11,7 +11,7 @@ class Navbar extends Component {
 
   render() {
     return (
-      <nav className="navbar navbar-first-page navbar-fixed-top">
+      <nav className={'navbar navbar-first-page ' + (this.props.type == 'fixed' ? 'navbar-static-top' : 'navbar-fixed-top')}>
         <div className="container">
           <div className="navbar-header">
             <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
@@ -20,7 +20,7 @@ class Navbar extends Component {
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-            <Link className="navbar-brand brand-black-colorful" to="/"></Link>
+            <Link className={'navbar-brand ' + (this.props.brand ? this.props.brand : 'brand-black-colorful')} to="/"></Link>
           </div>
           <div className="collapse navbar-collapse" id="navbar-collapse">
             <NavMenu links={this.props.links} />

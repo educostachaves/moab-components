@@ -21,7 +21,6 @@ const Renderer = ({ days, hours, minutes, seconds, completed }) => {
 class NavMenu extends Component {
   
   render() {
-    console.log(this.props.questoes);
     return (
       <ul className="nav navbar-nav navTop navbar-right text-center">
         <li>

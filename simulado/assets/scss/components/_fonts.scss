@@ -1,0 +1,13 @@
+// Fonts
+
+// Lato
+@include font-face('lato-light', $latoFontPath + 'Lato-Light', null, null, eot woff2 woff ttf);
+@include font-face('lato-regular', $latoFontPath + 'Lato-Regular', null, null, eot woff2 woff ttf);
+@include font-face('lato-semibold', $latoFontPath + 'Lato-Semibold', null, null, eot woff2 woff ttf);
+@include font-face('lato-bold', $latoFontPath + 'Lato-Bold', null, null, eot woff2 woff ttf);
+
+// League-Spartan
+@include font-face('league-spartan-bold', $leagueSpartanFontPath + 'LeagueSpartan-Bold', null, null, eot otf woff ttf svg);
+
+// Material-Icons
+@include font-face('material-icons', $materialIconsFontPath + 'MaterialIcons-Regular', null, null, eot woff2 woff ttf svg);

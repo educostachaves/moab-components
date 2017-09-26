@@ -1,0 +1,13 @@
+.form-group {
+  .form-control {
+    box-shadow: none;
+  }     
+  .input-group-addon {
+    background-color: $colorWhite;
+  }
+  &.input-group {
+    .form-control {
+      border-left: 0;
+    }
+  }
+}

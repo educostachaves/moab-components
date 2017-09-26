@@ -9,6 +9,9 @@ import reducers from './reducers';
 import App from './components/layout/app';
 import SimuladoIndex from './components/simulado_index';
 
+// Stylesheets
+import '../assets/scss/simulado.scss';
+
 const store = createStore(reducers, applyMiddleware(thunk));
 
 ReactDOM.render(

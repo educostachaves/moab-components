@@ -2,10 +2,10 @@
 export const FETCH_SIMULADO = 'fetch_simulado';
 export const FETCH_QUESTOES = 'fetch_questoes';
 
-const API = '//app.masteroab.com.br/api/v1';
+const API = '//masteroab.com.br/api/v1';
 const headers = new Headers({
-  'X-CSRF-TOKEN' : document.querySelectorAll('meta[name="csrf-token"]')[0].getAttribute('content'),
-  "Content-Type": "text/plain",
+  'X-CSRF-TOKEN' : '123123',
+  "Content-Type": "text/json",
   "X-Custom-Header": "ProcessThisImmediately"
 });
 
@@ -57,7 +57,6 @@ export function fetchQuestoes() {
       return res.json();
     })
     .then((data) => {
-      console.log(data.payload);
       const action = {
         type: FETCH_QUESTOES,
         payload: data.payload

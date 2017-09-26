@@ -10,7 +10,6 @@ class NavLinkDropdown extends Component {
         <td><Link to={"/simulado/questao/"+ i++}>{i++}</Link></td>
       );
     });
-    console.log(this.props.questoes);
     return (
       <li className="dropdown">
         <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
