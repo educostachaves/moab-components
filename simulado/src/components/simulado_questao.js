@@ -6,21 +6,25 @@ import { fetchSimulado } from '../actions';
 
 import Navbar from './navbar/navbar';
 
-class SimuladoIndex extends Component {
+class SimuladoQuestao extends Component {
 
   constructor(props) {
     super(props);
 
     this.state = {
       simulado: {
-        questoes: [],
+        questao: [],
         user: {}
       }
     }
   }
 
   componentDidMount() {
-    this.props.fetchSimulado();
+    if(!this.props.post) {
+      const { id } = this.props.match.params;
+      this.props.fetchQuestao(id);
+    }
+    
   }
 
   createMarkup(data) {
@@ -63,4 +67,4 @@ function mapDispatchToProps(dispatch) {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(SimuladoIndex);
+export default connect(mapStateToProps, mapDispatchToProps)(SimuladoQuestao);

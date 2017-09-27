@@ -28,6 +28,7 @@
     "mocha": "^2.4.5",
     "node-sass": "^4.5.3",
     "react-addons-test-utils": "^0.14.7",
+    "remote-redux-devtools": "^0.5.12",
     "sass-loader": "^6.0.6",
     "sass-webpack-plugin": "^0.3.3",
     "style-loader": "^0.18.2",
