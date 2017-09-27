@@ -4,14 +4,22 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { fetchSimulado } from '../actions';
 
+import Navbar from './navbar/navbar';
+
 class SimuladoIndex extends Component {
 
   constructor(props) {
     super(props);
 
+    this.state = {
+      simulado: {
+        questoes: [],
+        user: {}
+      }
+    }
   }
 
-  componentDidMount() {
+  componentWillMount() {
     this.props.fetchSimulado();
   }
 
@@ -22,34 +30,22 @@ class SimuladoIndex extends Component {
   render() {
     return (
       <div>
-        <Navbar type="" brand="" user="" questions=""/>
-        <header className="header-calendar">
+        <header className="header-simulado">
+          <Navbar type="static" brand="brand-white" user={this.props.simulado.user} questoes={this.props.simulado.questoes}/>
           <div className="container">
             <div className="row">
-              <div className="col-md-6">
-                <div className="calendar-description">
+              <div className="col-md-12">
+                <div className="simulado-description">
                   <h1>{this.props.simulado.title}</h1>
-                  <p>Bem Vindo ao simulado virtual da MasterOAB. Aqui tentaremos ao máximo simular uma experiência completa do exame da OAB para você.</p>
+                  <div dangerouslySetInnerHTML={this.createMarkup(this.props.simulado.description)} />
+                  <Link className="btn btn-cta-promotional" to="/simulado/questao/1">
+                    Iniciar Simulado
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </header>
-        <section className="section-intern bg-gray">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-12">
-                <h3>Instruções</h3>
-                <div dangerouslySetInnerHTML={this.createMarkup(this.props.simulado.description)} />
-              </div>
-              <div className="col-md-8 col-md-offset-2 text-center">
-                <Link className="btn btn-cta-colorful" to="/simulado/questao/1">
-                  Começar Simulado
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
       </div>
     );
   }

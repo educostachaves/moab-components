@@ -321,4 +321,24 @@
     }
   }
 
+  &.btn-question {
+    padding: 5px 10px;
+    color: $colorBlueDark;
+    border: 1px solid $colorGrayLight;
+    border-radius: 0px;
+    width: 30px;
+    height: 30px;
+    padding: 4px 0;
+    text-align: center;
+    display: block;
+    float: left;
+    transition: background-color .5s ease;
+    margin: 0px 0px -1px -1px;
+
+    &:hover {
+      color: $colorWhite;
+      background-color: lighten($colorBlueDark,30%);
+    }
+  }
+
 }

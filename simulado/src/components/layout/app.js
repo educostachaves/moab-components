@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Navbar from '../navbar/navbar';
+import Footer from '../footer';
 
 class App extends Component {
 
@@ -13,6 +13,7 @@ class App extends Component {
     return (
       <section>
         {this.props.children}
+        <Footer />
       </section>
     );
   }

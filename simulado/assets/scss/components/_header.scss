@@ -508,6 +508,29 @@ header.header-calendar {
   }
 }
 
+header.header-simulado {
+  background-image: linear-gradient(239deg, $colorGreenLight, $colorGreenDarken);
+  background-size: cover;
+  background-position: center center;
+  min-height: 1024px;  
+
+  .simulado-description{
+    margin: 3em 0;
+    padding: 5em 0 2em;
+    text-align: center;
+    h1 {
+      font-size: 70px;
+      color: $colorWhite;
+      font-family: 'lato-bold', serif;
+    }
+    p {
+      padding: 1em 0;
+      color: $colorWhite;
+      font-size: 20px;
+    }
+  }
+}
+
 header.header-checkout{
   background-image: linear-gradient(90deg, $colorSecondary, $colorPrimary);
   min-height: 50px;  
