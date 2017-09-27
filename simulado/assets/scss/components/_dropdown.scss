@@ -1,0 +1,40 @@
+.dropdown {
+	a > i {
+		margin-left: 10px;
+	}
+}
+
+.dropdown-menu {
+	&.large {
+		padding: 10px;
+		min-width: 312px;
+	}
+	li a {
+		padding: 5px 15px;
+		font-weight: 300;
+	}
+	&.multi-column-dropdown {
+		list-style: none;
+		margin: 0px;
+		padding: 0px;
+		li a {
+			display: block;
+			clear: both;
+			line-height: 1.428571429;
+			color: #333;
+			white-space: normal;
+			&:hover {
+				text-decoration: none;
+				color: #262626;
+				background-color: #999;
+			}
+		}
+	}
+}
+ 
+@media (max-width: 767px) {
+	.dropdown-menu.multi-column {
+		min-width: 240px !important;
+		overflow-x: hidden;
+	}
+}

@@ -1,0 +1,87 @@
+
+footer {
+  background: #103551;
+  width: 100%;
+  padding: 40px 0 20px;
+  margin-bottom: -20px;
+  .footer-brand{
+    margin: auto;
+    background-image: url( $imagePath + 'logo.png');
+    height: 35px;
+    width: 174px;
+    display: block;
+    &.brand-white { background-position-y: top; }
+    &.brand-black-colorful { background-position-y: center; }
+    &.brand-white-colorful { background-position-y: bottom; }
+  }
+  .footer-menu,
+  .footer-social,
+  .footer-copyright,
+  .footer-privacy {
+    @extend .list-unstyled;
+    @extend .list-inline;
+    color: #FFF;
+    margin: 10px 0 10px;
+    text-align: center;
+  }
+  .footer-app {
+    color: #FFF;
+    margin: 10px 0 10px;
+    text-align: right;
+    h2 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 14px;
+      padding: 5px 0;
+    }
+  }
+  span {
+    font-size: 22px;
+    margin: 0 10px;
+  }
+  a {
+    color: $colorWhite;
+    font-size: 14px;
+    transition: color .5s ease;
+    padding-right: 5px;
+    padding-left: 5px;
+    &:hover, &:focus {
+      color: $colorSecondary !important;
+      text-decoration: none;
+    }
+  }
+  &.footer-simulado {
+    background: transparent;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: -70px;
+  }
+}
+
+@media only screen and (min-width : 768px) {
+  footer {
+    .footer-brand,
+    .footer-menu,
+    .footer-copyright {
+      float: left;
+      text-align: left;
+    }
+    .footer-social,
+    .footer-privacy {
+      float: right;
+      text-align: right;
+    }
+    .footer-copyright,
+    .footer-app ,
+    .footer-privacy {
+      padding-top: .5em;
+    }
+    &.footer-simulado {
+      .footer-privacy {
+        float: none;
+        text-align: center;
+      }
+    }
+  }
+}
