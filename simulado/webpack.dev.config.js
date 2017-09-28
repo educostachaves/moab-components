@@ -40,8 +40,11 @@ module.exports = {
     rules: [
       {
         test: /\.jsx?$/,
-        use: ['babel-loader',],
-        exclude: /node_modules/
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['react', 'es2015', 'stage-1']
+        }
       },
       {
         test: /\.scss$/,

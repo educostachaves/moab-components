@@ -2,7 +2,7 @@ import _ from 'lodash';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { fetchSimulado } from '../actions';
+import { fetchQuestao } from '../actions';
 
 import Navbar from './navbar/navbar';
 
@@ -11,20 +11,14 @@ class SimuladoQuestao extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      simulado: {
-        questao: [],
-        user: {}
-      }
-    }
   }
 
   componentDidMount() {
-    if(!this.props.post) {
+    if(!this.props.questao) {
       const { id } = this.props.match.params;
       this.props.fetchQuestao(id);
     }
-    
+    console.log('questao', this.props);
   }
 
   createMarkup(data) {
@@ -35,16 +29,11 @@ class SimuladoQuestao extends Component {
     return (
       <div>
         <header className="header-simulado">
-          <Navbar type="static" brand="brand-white" user={this.props.simulado.user} questoes={this.props.simulado.questoes}/>
           <div className="container">
             <div className="row">
               <div className="col-md-12">
                 <div className="simulado-description">
-                  <h1>{this.props.simulado.title}</h1>
-                  <div dangerouslySetInnerHTML={this.createMarkup(this.props.simulado.description)} />
-                  <Link className="btn btn-cta-promotional" to="/simulado/questao/1">
-                    Iniciar Simulado
-                  </Link>
+                  <h1></h1>
                 </div>
               </div>
             </div>
@@ -55,16 +44,9 @@ class SimuladoQuestao extends Component {
   }
 }
 
-function mapStateToProps(state) {
-  return { simulado: state.simulado }
+function mapStateToProps({ questoes }, ownProps) {
+  console.log(questoes);
+  return { questao: ownProps.match.params.id };
 }
 
-function mapDispatchToProps(dispatch) {
-  return {
-    fetchSimulado: () => {
-      dispatch(fetchSimulado())
-    }
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(SimuladoQuestao);
+export default connect(mapStateToProps, { fetchQuestao })(SimuladoQuestao);

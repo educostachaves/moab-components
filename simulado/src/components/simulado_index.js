@@ -11,12 +11,6 @@ class SimuladoIndex extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      simulado: {
-        questoes: [],
-        user: {}
-      }
-    }
   }
 
   componentDidMount() {
@@ -28,26 +22,46 @@ class SimuladoIndex extends Component {
   }
 
   render() {
-    return (
-      <div>
-        <header className="header-simulado">
-          <Navbar type="static" brand="brand-white" user={this.props.simulado.user} questoes={this.props.simulado.questoes}/>
-          <div className="container">
-            <div className="row">
-              <div className="col-md-12">
-                <div className="simulado-description">
-                  <h1>{this.props.simulado.title}</h1>
-                  <div dangerouslySetInnerHTML={this.createMarkup(this.props.simulado.description)} />
-                  <Link className="btn btn-cta-promotional" to="/simulado/questao/1">
-                    Iniciar Simulado
-                  </Link>
+    const simulado = this.props.simulado.simulado;
+    if (simulado) {
+      return (
+        <div>
+          <header className="header-simulado">
+            <Navbar type="static" brand="brand-white" user={simulado.user} questoes={simulado.questoes}/>
+            <div className="container">
+              <div className="row">
+                <div className="col-md-12">
+                  <div className="simulado-description">
+                    <h1>{simulado.title}</h1>
+                    <div dangerouslySetInnerHTML={this.createMarkup(simulado.description)} />
+                    <Link className="btn btn-cta-promotional" to="/questao/1">
+                      Iniciar Simulado
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </header>
-      </div>
-    );
+          </header>
+        </div>
+      );
+    } else {
+      return (
+        <div>
+          <header className="header-simulado">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-12">
+                  <div className="simulado-description">
+                    <img src="/assets/images/loader.gif" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+        </div>
+      );
+    }
+    
   }
 }
 

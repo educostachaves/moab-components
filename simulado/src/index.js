@@ -8,6 +8,7 @@ import thunk from 'redux-thunk';
 import reducers from './reducers';
 import App from './components/layout/app';
 import SimuladoIndex from './components/simulado_index';
+import SimuladoQuestao from './components/simulado_questao';
 
 // Stylesheets
 import '../assets/scss/simulado.scss';
@@ -22,6 +23,7 @@ ReactDOM.render(
       <div>
         <App>
           <Switch>
+            <Route path="/questao/:id" component={SimuladoQuestao} />
             <Route path="/" component={SimuladoIndex} />
           </Switch>
         </App>
