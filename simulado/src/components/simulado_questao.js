@@ -14,7 +14,7 @@ class SimuladoQuestao extends Component {
   }
 
   componentDidMount() {
-    if(!this.props.questao) {
+    if(!this.props.questaoId) {
       const { id } = this.props.match.params;
       this.props.fetchQuestao(id);
     }
@@ -45,8 +45,18 @@ class SimuladoQuestao extends Component {
 }
 
 function mapStateToProps({ questoes }, ownProps) {
-  console.log(questoes);
-  return { questao: ownProps.match.params.id };
+  console.log('questoes', this.state);
+  return { questaoId: ownProps.match.params.id };
 }
 
-export default connect(mapStateToProps, { fetchQuestao })(SimuladoQuestao);
+function mapDispatchToProps(dispatch) {
+  const questaoId = 1;
+  console.log('id', questaoId);
+  return {
+    fetchQuestao: () => {
+      dispatch(fetchQuestao(questaoId))
+    }
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(SimuladoQuestao);
